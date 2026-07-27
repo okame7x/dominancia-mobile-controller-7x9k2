@@ -1,0 +1,8 @@
+*.env
+.env
+.tamblox_device
+config.local.json
+.dominancia/
+__pycache__/
+*.pyc
+cloud-phone-watcher

@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+import os
+
+import tamblox_bot
+
+
+def main():
+    os.environ["DOMINANCIA_CONTROLLER_MODE"] = "1"
+    os.environ["BUYER_STORE_MODE"] = "tamblox"
+    os.environ["DOMINANCIA_MOBILE_CONTROLLER"] = "1"
+    return tamblox_bot.main()
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except KeyboardInterrupt:
+        print("\nInterrompido.")
+        raise SystemExit(130)
